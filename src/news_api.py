@@ -1,6 +1,9 @@
 import requests
+import streamlit as st
 
-API_KEY = "aaa35ed690b54ea0a68e244aca5dc29b"
+API_KEY = st.secrets["NEWS_API_KEY"]
+
+
 BASE_URL = "https://newsapi.org/v2/top-headlines"
 
 def fetch_real_news(query, country="us", page_size=5):
