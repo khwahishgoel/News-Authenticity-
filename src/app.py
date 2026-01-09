@@ -8,6 +8,7 @@ from news_api import fetch_real_news
 BASE_DIR = os.path.dirname(__file__)
 MODEL_PATH = os.path.join(BASE_DIR, "model.pkl")
 VECTORIZER_PATH = os.path.join(BASE_DIR, "vectorizer.pkl")
+API_KEY = st.secrets["NEWS_API_KEY"]
 
 # ------------------ LOAD MODEL ------------------
 @st.cache_resource
